@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Select and Print</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <div class="block">
+        <div>Available towns</div>
+        <select id="available-towns" size="5">
+            <option>Sofia</option>
+            <option>Varna</option>
+            <option>Pleven</option>
+        </select>
+    </div>
+    <div class="block">
+        <button id="btnRight" onclick="move('right')">&rightarrow;</button>
+        <button id="btnLeft" onclick="move('left')">&leftarrow;</button>
+        <button id="btnPrint" onclick="move('print')">Print</button>
+    </div>
+    <div class="block">
+        <div>Selected towns</div>
+        <select id="selected-towns" size="5">
+            <option>Plovdiv</option>
+            <option>Ruse</option>
+        </select>
+    </div>
+    <div id="output"></div>
+    <script src="./select-And-Print.js"></script>
+    <script>
+        move();
+    </script>
+</body>
+
+</html>
