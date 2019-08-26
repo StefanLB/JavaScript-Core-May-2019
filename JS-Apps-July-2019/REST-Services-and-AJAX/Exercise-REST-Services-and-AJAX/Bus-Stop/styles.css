@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 30rem;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: 'Open Sans', serif;
+}
+
+#stopInfo {
+    width: 25rem;
+    margin: auto;
+    text-align: center;
+}
+
+input[type=text] {
+    padding: 1rem 2rem;
+    margin: 0.5rem 0;
+    display: inline-block;
+    border: 0.1rem solid #cccccc;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type=button] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #45A049;
+}
+
+#stopName {
+    background-color: aquamarine;
+    font-size: 1.5em;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+li {
+    list-style-type: none;
+    line-height: 2rem;
+}

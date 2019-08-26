@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 30rem;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: 'Open Sans', serif;
+    text-transform: uppercase;
+}
+
+#schedule {
+    width: 30rem;
+    margin: auto;
+    text-align: center;
+}
+
+#info {
+    background-color: aquamarine;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+input[type=button] {
+    width: 10rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: inherit;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Messenger</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="main">
+        <textarea id="messages" cols="80" rows="15" disabled="true"></textarea>
+        <div id="controls">
+            <div>
+                <label for="author">Name:</label>
+                <input id="author" type="text" />
+            </div>
+            <div>
+                <label for="content">Message:</label>
+                <input id="content" type="text" />
+            </div>
+            <div class="buttons">
+                <input id="submit" type="button" value="Send" />
+                <input id="refresh" type="button" value="Refresh" />
+                <input id="delete" type="button" value="Delete" />
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
