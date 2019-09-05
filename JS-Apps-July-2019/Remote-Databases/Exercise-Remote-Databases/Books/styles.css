@@ -1,0 +1,90 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+table {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border: 0.1rem solid #234465;
+    border-radius: 0.5rem;
+}
+
+table thead th {
+    text-decoration: underline;
+    text-align: center;
+}
+
+table tbody td {
+    width: 20%;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+table tbody tr:nth-child(even),
+table tbody tr:nth-child(odd) button {
+    background-color: #234465;
+    color: white;
+}
+
+table tbody tr:nth-child(odd),
+table tbody tr:nth-child(even) button {
+    background-color: white;
+    color:#234465;
+}
+
+table tr td:not(:last-child):hover {
+    text-decoration: underline;
+}
+
+table button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+table button:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.notification {
+    padding-top: 1rem;
+    width: 50%;
+    text-align: center;
+}
+
+button.loadBooks {
+    /* flex-grow: 1; */
+    /* display: block; */
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button.loadBooks:hover {
+    background-color: #cccccc;
+}
+
+fieldset {
+    width: 90vw;
+    margin: 0.5rem auto;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}

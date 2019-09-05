@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Books</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <form method="post">
+        <fieldset class="addForm">
+            <legend>ADD FORM</legend>
+            <label>TITLE</label>
+            <input type="text" class="title" placeholder="Title..." />
+            <label>AUTHOR</label>
+            <input type="text" class="author" placeholder="Author..." />
+            <label>ISBN</label>
+            <input type="text" class="isbn" placeholder="Isnb..." />
+            <input type="submit" class="addBook" value="Add Book" />
+        </fieldset>
+    </form>
+
+    <form method="post">
+        <fieldset class="editForm">
+            <legend>EDIT FORM</legend>
+            <label>TITLE</label>
+            <input type="text" class="title" placeholder="Title..." />
+            <label>AUTHOR</label>
+            <input type="text" class="author" placeholder="Author..." />
+            <label>ISBN</label>
+            <input type="text" class="isbn" placeholder="Isnb..." />
+            <input type="submit" class="editBook" value="Edit Book" />
+        </fieldset>
+    </form>
+
+    <div class="container">
+        <button class="loadBooks">LOAD ALL BOOKS</button>
+        <div class="notification"></div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Isbn</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+#content {
+    width: 40em;
+}
+
+.venue {
+    margin: 0.5em;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+}
+
+.venue-name, .head {
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: lightcyan;
+}
+
+.venue-name input {
+    margin-right: 1rem;
+}
+
+.description {
+    margin: 1em;
+}
+
+table {
+    text-align: center;
+    margin: 1em;
+}
+
+td, th {
+    width: 5rem;
+}
+
+.purchase-info span {
+    display: inline-block;
+    width: 6rem;
+    margin: 1rem;
+}
+
+.ticket {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 0.1em solid black;
+}
+
+.bl {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 1em 3em;
+}
+
+.left {
+    flex-grow: 2;
+}
+
+.right {
+    flex-grow: 1;
+}
+
+input {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 0.1em solid #cccccc;
+    border-radius: 0.5em;
+    outline: none;
+}
+
+input[type=button] {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+span.loading {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 1rem 2rem;
+    text-align: center;
+}
