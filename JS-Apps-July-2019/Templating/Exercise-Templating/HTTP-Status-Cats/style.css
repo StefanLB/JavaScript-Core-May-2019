@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding-top: 1rem; 
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    padding: 3rem;
+    margin-bottom: 1.5rem;
+    margin-left: 3.5rem;
+    margin-top: 3rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    display: inline-block;
+}
+
+.showBtn {
+    width: 13rem;
+    height: 3.5rem;
+    position: relative;
+    left: 1rem;
+    background-color: #2AA5FE;
+    border-radius: 1rem;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+
+.status {
+    position: relative;
+    top: 1rem;
+    text-align: center;
+    left: 1rem;
+    font-weight: 600;
+}
+
+.status p {
+    padding: 1rem;
+}
