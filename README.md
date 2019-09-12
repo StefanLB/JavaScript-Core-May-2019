@@ -1,1 +1,1 @@
-# JavaScript-Core-May-2019
+Solutions for JavaScript Core at SoftUni https://judge.softuni.bg/.
