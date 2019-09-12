@@ -1,0 +1,24 @@
+<nav>
+    <a class="active" href="#/home">Home</a>
+    {{#if isAuthenticated}}
+    <a href="#/car/all">All Listings</a>
+    <a href="#/car/my">My Listings</a>
+    <a href="#/car/create">Create Listing</a>
+    <div id="profile">
+        <a>Welcome {{username}}</a>
+        <a href="#/user/logout">logout</a>
+    </div>
+    {{/if}}
+</nav>
+
+<div id="notifications">
+    <div id="loadingBox" class="notification">
+        <span>Loading …</span>
+    </div>
+    <div id="infoBox" class="notification">
+        <span>Info</span>
+    </div>
+    <div id="errorBox" class="notification">
+        <span>Error</span>
+    </div>
+</div>

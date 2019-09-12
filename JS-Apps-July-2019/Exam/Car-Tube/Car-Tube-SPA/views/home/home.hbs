@@ -1,0 +1,15 @@
+{{>header}}
+<div id="main">
+    <div id="welcome-container">
+        <h1>Welcome To Car Tube</h1>
+        <img src="./images/finance-car.png" alt="carIntro" />
+        <h2>Login or register to check out our listings or to make one</h2>
+        {{#unless isAuthenticated}}
+        <div id="button-div">
+            <a href="#/user/login" class="button">Login</a>
+            <a href="#/user/register" class="button">Register</a>
+        </div>
+        {{/unless}}
+    </div>
+</div>
+{{>footer}}

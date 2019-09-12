@@ -1,0 +1,41 @@
+{{>header}}
+<div id="main">
+    {{#unless this.isAuthenticated}}
+    <div id="welcome-container">
+        <h1>Welcome To Meme Lounge</h1>
+        <img src="https://i.kym-cdn.com/photos/images/original/001/218/908/247.gif" alt="carIntro" />
+        <h2>Login to see our memes right away!</h2>
+        <div id="button-div">
+            <a href="#/user/login" class="button">Login</a>
+            <a href="#/user/register" class="button">Register</a>
+        </div>
+    </div>
+    {{else}}
+    <div id="meme-feed">
+        <h1>Meme Feed</h1>
+        <div id="memes">
+            {{#each this.memes}}
+            <div class="meme">
+                <a href="#/meme/details/{{this._id}}" class="meme-title">{{this.title}}</a>
+                <br />
+                <a href="#/meme/details/{{this._id}}"><img class="meme-image" src="{{this.imageUrl}}" /></a>
+                <div class="info">
+                    <div id="data-buttons">
+                        <a href="#/meme/details/{{this._id}}" class="custom-button">Check Out</a>
+                        {{#if this.isCreator}}
+                        <a href="#/meme/edit/{{this._id}}" class="custom-button">Edit</a>
+                        <a href="#/meme/delete/{{this._id}}" class="custom-button">Delete</a>
+                        {{/if}}
+                        <a href="#/user/profile/{{this._acl.creator}}" class="creator">Creator: {{this.creator}}</a>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            {{else}}
+            <p class="no-memes">No memes in database.</p>
+            {{/each}}
+        </div>
+    </div>
+    {{/unless}}
+</div>
+{{>footer}}

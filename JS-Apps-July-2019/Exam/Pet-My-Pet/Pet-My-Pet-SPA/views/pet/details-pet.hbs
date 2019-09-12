@@ -1,0 +1,10 @@
+{{>header}}
+<section class="detailsOtherPet">
+    {{#with pet}}
+    <h3>{{name}}</h3>
+    <p>Pet counter: {{likes}} <a href="#/pet/like/{{_id}}"><button class="button"><i class="fas fa-heart"></i> Pet</button></a></p>
+    <p class="img"><img src="{{imageURL}}"></p>
+    <p class="description">{{description}}</p>
+    {{/with}}
+</section>
+{{>footer}}
